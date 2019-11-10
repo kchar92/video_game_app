@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     post '/games' => 'video_games#create'
 
     patch '/games/:id' => 'video_games#update'
+
+    delete '/games/:id' => 'video_games#destroy'
   end
 end

@@ -32,8 +32,17 @@ class Api::VideoGamesController < ApplicationController
     @game.rating = params[:game_rating]
 
     @game.save
-    
+
     render 'video_game_show.json.jb'
+  end
+
+  def destroy
+    game_id = params[:id]
+    @game = VideoGame.find_by(id: game_id)
+
+    @game.destroy
+
+    render 'video_game_destroy.json.jb'
   end
 
 end
