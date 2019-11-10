@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     get '/games' => 'video_games#index'
 
     get '/games/:id' => 'video_games#show'
+
+    post '/games' => 'video_games#create'
   end
 end
