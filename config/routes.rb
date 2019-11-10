@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     get '/games/:id' => 'video_games#show'
 
     post '/games' => 'video_games#create'
+
+    patch '/games/:id' => 'video_games#update'
   end
 end
