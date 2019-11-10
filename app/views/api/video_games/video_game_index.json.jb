@@ -1,0 +1,8 @@
+@games.map do |game|
+  {
+    title: game.title,
+    description: game.description,
+    price: game.price,
+    rating: game.rating
+  }
+end
