@@ -1,0 +1,7 @@
+{
+  id: @game.id,
+  title: @game.title,
+  price: @game.price,
+  description: @game.description,
+  rating: @game.rating
+}
