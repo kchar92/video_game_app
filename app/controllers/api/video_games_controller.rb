@@ -26,10 +26,10 @@ class Api::VideoGamesController < ApplicationController
     game_id = params[:id]
     @game = VideoGame.find_by(id: game_id)
 
-    @game.title = params[:game_title]
-    @game.description = params[:game_description]
-    @game.price = params[:game_price]
-    @game.rating = params[:game_rating]
+    @game.title = params[:game_title] || @game.title
+    @game.description = params[:game_description] || @game.description
+    @game.price = params[:game_price] || @game.price
+    @game.rating = params[:game_rating] || @game.rating
 
     @game.save
 
