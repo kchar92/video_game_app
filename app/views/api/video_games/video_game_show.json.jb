@@ -3,5 +3,6 @@
   title: @game.title,
   price: @game.price,
   description: @game.description,
-  rating: @game.rating
+  rating: @game.rating,
+  players: @game.players
 }
